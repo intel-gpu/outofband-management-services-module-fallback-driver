@@ -1,0 +1,7 @@
+Package:	_MODULE_NAME_
+Version:	_VERSION_-_RELEASE_
+Maintainer:	Intel
+Architecture:	all
+Description:	Intel® Out-of-Band Management Services Module Fallback Driver
+Depends:	dkms, bash, tar, sed
+

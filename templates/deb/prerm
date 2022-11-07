@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/sbin/dkms remove -m _MODULE_NAME_ -v _VERSION_-_RELEASE_ --all
+exit 0

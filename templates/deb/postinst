@@ -1,0 +1,10 @@
+#!/bin/bash
+
+occurrences=`/usr/sbin/dkms status | grep _MODULE_NAME_ | grep _VERSION_-_RELEASE_ | wc -l`
+if [ ! occurrences > 0 ];
+then
+    /usr/sbin/dkms add -m _MODULE_NAME_ -v _VERSION_-_RELEASE_
+fi
+/usr/sbin/dkms build -m _MODULE_NAME_ -v _VERSION_-_RELEASE_
+/usr/sbin/dkms install -m _MODULE_NAME_ -v _VERSION_-_RELEASE_
+exit 0

@@ -1,0 +1,5 @@
+0.1.0:
+	* Added DKMS support (deb and rpm)
+
+0.0.1:
+	* Initial version
